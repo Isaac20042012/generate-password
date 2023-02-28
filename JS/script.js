@@ -52,6 +52,7 @@ const generatePassword = (
   for (let i = 0; i < lenght; i++) {
     const randomIndex = Math.floor(Math.random() * newArray.length);
     password += newArray[randomIndex];
+    passInput.setAttribute(size, lenInput);
   }
 
   passInput.value = password;
